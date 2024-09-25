@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdbool.h> 
 
-bool isPalindrome(char str[]) {
+
+int isPalindrome(char str[]) {
     int start = 0; 
     int end = 0;   
     while (str[end] != '\0') {
@@ -11,19 +11,19 @@ bool isPalindrome(char str[]) {
 
     while (start < end) {
         if (str[start] != str[end]) {
-            return false; 
+            return 1;
         }
         start++;
         end--;
     }
-    return true; 
+    return -1;
 }
 
 int main() {
     char str[100]; 
 
     printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
+    scanf("%s",str);
 
     int length = 0;
     while (str[length] != '\0') {
