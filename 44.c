@@ -11,12 +11,12 @@ int isPalindrome(char str[]) {
 
     while (start < end) {
         if (str[start] != str[end]) {
-            return 1;
+            return -1;
         }
         start++;
         end--;
     }
-    return -1;
+    return 1;
 }
 
 int main() {
