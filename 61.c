@@ -10,8 +10,8 @@ struct student {
 
 int main() {
     struct student s;
-    s.roll_number = 69;
-    strcpy(s.name, "imad");
+    s.roll_number = 13;
+    strcpy(s.name, "jake");
     s.marks = 100;
     s.grade = 'A';
 
